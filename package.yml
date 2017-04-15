@@ -1,15 +1,15 @@
 name       : dar
-version    : 2.5.7
-release    : 3
+version    : 2.5.10
+release    : 4
 source     :
-    - ftp://ftp.dm3c.org/dar.linux.free.fr/Releases/Src/dar-2.5.7.tar.gz : f4fa3b5d8d38a299e4463dbf77e104c572be669838e16a3d507dce7173d1561d
-homepage   : http://dar.linux.free.fr
+    - https://netcologne.dl.sourceforge.net/project/dar/dar/2.5.10/dar-2.5.10.tar.gz : 771c8462b9e65bf646699a14a4e156c75b5bda4301ebf6f5e03bd82c2486a4d8
 license    : GPL-2.0
 component  : system.utils
 summary    : Disk ARchive
 description: |
     dar is a shell command that backs up directory trees and files, taking care of hard links, Extended Attributes, sparse files, MacOS's file forks, any inode type (including Solaris Door inodes), etc.
 builddeps  :
+    - pkgconfig(ext2fs)
     - lzo-devel
 setup      : |
     %configure --disable-static
