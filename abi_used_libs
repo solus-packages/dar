@@ -1,7 +1,9 @@
+libattr.so.1
 libbz2.so.1.0
 libc.so.6
 libgcc_s.so.1
 libgcrypt.so.20
+libgpgme.so.11
 liblzma.so.5
 liblzo2.so.2
 libpthread.so.0

@@ -2,20 +2,32 @@
     <Source>
         <Name>dar</Name>
         <Packager>
-            <Name>Michael Meinertzhagen</Name>
-            <Email>mmeinert@protonmail.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
         <License>GPL-2.0</License>
         <PartOf>system.utils</PartOf>
-        <Summary xml:lang="en">Disk ARchive</Summary>
-        <Description xml:lang="en">dar is a shell command that backs up directory trees and files, taking care of hard links, Extended Attributes, sparse files, MacOS&apos;s file forks, any inode type (including Solaris Door inodes), etc.
+        <Summary xml:lang="en">A full featured command-line backup tool, short for Disk ARchive</Summary>
+        <Description xml:lang="en">DAR is a command line tool to backup a directory tree and files. DAR is
+able to make differential backups, split them over a set of disks or files
+of a given size, use compression, filter files or subtrees to be saved or
+not saved, directly access and restore given files. DAR is also able
+to handle extented attributes, and can make remote backups through an
+ssh session for example. Finally, DAR handles save and restore of hard
+and symbolic links.
 </Description>
         <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>dar</Name>
-        <Summary xml:lang="en">Disk ARchive</Summary>
-        <Description xml:lang="en">dar is a shell command that backs up directory trees and files, taking care of hard links, Extended Attributes, sparse files, MacOS&apos;s file forks, any inode type (including Solaris Door inodes), etc.
+        <Summary xml:lang="en">A full featured command-line backup tool, short for Disk ARchive</Summary>
+        <Description xml:lang="en">DAR is a command line tool to backup a directory tree and files. DAR is
+able to make differential backups, split them over a set of disks or files
+of a given size, use compression, filter files or subtrees to be saved or
+not saved, directly access and restore given files. DAR is also able
+to handle extented attributes, and can make remote backups through an
+ssh session for example. Finally, DAR handles save and restore of hard
+and symbolic links.
 </Description>
         <PartOf>system.utils</PartOf>
         <Files>
@@ -30,11 +42,17 @@
     <Package>
         <Name>dar-devel</Name>
         <Summary xml:lang="en">Development files for dar</Summary>
-        <Description xml:lang="en">dar is a shell command that backs up directory trees and files, taking care of hard links, Extended Attributes, sparse files, MacOS&apos;s file forks, any inode type (including Solaris Door inodes), etc.
+        <Description xml:lang="en">DAR is a command line tool to backup a directory tree and files. DAR is
+able to make differential backups, split them over a set of disks or files
+of a given size, use compression, filter files or subtrees to be saved or
+not saved, directly access and restore given files. DAR is also able
+to handle extented attributes, and can make remote backups through an
+ssh session for example. Finally, DAR handles save and restore of hard
+and symbolic links.
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="4">dar</Dependency>
+            <Dependency release="5">dar</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/</Path>
@@ -43,12 +61,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2017-04-15</Date>
-            <Version>2.5.10</Version>
+        <Update release="5">
+            <Date>2017-07-16</Date>
+            <Version>2.5.11</Version>
             <Comment>Packaging update</Comment>
-            <Name>Michael Meinertzhagen</Name>
-            <Email>mmeinert@protonmail.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>
